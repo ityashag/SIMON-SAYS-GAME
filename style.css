@@ -1,0 +1,57 @@
+header{
+    height:40%;
+    width:100;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    font-family: 'Exo', sans-serif;
+}
+header a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.info{
+    margin:auto;
+    text-align:center;
+}
+p{
+    font-weight: bold;
+    text-align:center;
+}
+.btn-container{
+    height:30em;
+    width:30em;
+    display: flex;
+    margin:auto;
+    flex-wrap: wrap;
+}
+.btn-container button{
+    height:40%;
+    width:40%;
+    border: 10px black solid;
+    border-radius: 10%;
+    display: flex;
+    margin:auto;
+}
+.one{
+    background-color: red;
+}
+.two{
+    background-color: green;
+}
+.three{
+    background-color: blue;
+}
+.four{
+    background-color: yellow;
+}
+.flash{
+    background-color: white;
+}
+.red_bg{
+    background-color: red;
+}
