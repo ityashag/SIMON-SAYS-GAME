@@ -6,12 +6,23 @@ let level = 0;
 let btns = document.querySelectorAll("button");
 let p = document.querySelector("#res");
 let body= document.querySelector("body");
-document.addEventListener("keypress",function(){
+let main = document.querySelector("main");
+// document.addEventListener("keypress",function(){
+//     if(started==false)
+//     {
+//         levelUp();
+//         started=true;
+//     }
+// })
+btns[btns.length-1].addEventListener("click",function()
+{
     if(started==false)
     {
         levelUp();
         started=true;
     }
+    let par = this.parentElement
+    par.classList.add("hide");
 })
 function buttonFlash(btn)
 {
@@ -36,12 +47,14 @@ function gameOver()
     setTimeout(function(){
         body.classList.remove("red_bg");
     },450);
-    let score = "GAME OVER !! Your score is : "+level+" . press any key to restart . ";
+    let score = "GAME OVER !! Your score is : "+level+" .";
     p.innerText=score;
     gameSeq=[];
     level=0;
     userSeq=[];
     started=false;
+    let par = btns[btns.length-1].parentElement;
+    par.classList.remove("hide");
 
 }
 
@@ -82,7 +95,7 @@ function btnPress(){
     
 }
 
-for(let i=0;i<btns.length;i++)
+for(let i=0;i<btns.length-1;i++)
 {
     btns[i].addEventListener("click",btnPress);
 }

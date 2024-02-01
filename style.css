@@ -23,8 +23,8 @@ p{
     text-align:center;
 }
 .btn-container{
-    height:30em;
-    width:30em;
+    height:28em;
+    width:28em;
     display: flex;
     margin:auto;
     flex-wrap: wrap;
@@ -54,4 +54,30 @@ p{
 }
 .red_bg{
     background-color: red;
+}
+.start{
+    height:10em;
+    width:3.3em;
+    margin:auto;
+
+}
+.start button{
+    background-color: lightgreen;
+    margin:auto;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 700px) {
+    .btn-container{
+        height:20em;
+        width:20em;
+        display: flex;
+        margin:auto;
+        flex-wrap: wrap;
+    }
+}
+.hide{
+    display: none;
 }
